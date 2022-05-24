@@ -1,0 +1,39 @@
+import './App.css';
+import HaLightbulb from './Components/HaLightbulb'
+
+function App() {
+ 
+  
+  return (
+    <div className="App">
+    <HaLightbulb />
+    <HaLightbulb /> 
+    <HaLightbulb /> 
+    </div>
+  );
+}
+
+export default App;
+
+
+import { useState } from 'react';
+
+    
+const HaLightbulb = () => {
+    
+    const [lightbul, setlightbul ] = useState ('true')
+    const HandlerBulb = () => setlightbul(!lightbul)
+
+
+return( 
+  <div>
+    <h3>turn on the lightand please turn it off</h3> 
+    <div className='Circul' style={{background: lightbul ? 'black' : 'yellow'}}> </div>
+    <button onClick={HandlerBulb}>
+    {lightbul ? 'on' : 'off'}
+    </button>
+  </div>
+ )
+}
+
+export default HaLightbulb;

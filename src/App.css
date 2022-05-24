@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.App {
+ padding: 1rem 0;
+ display: flex;
+ flex-flow: row-reverse;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Container-Crud{
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 230px;
+  padding: 10px;
+}
+
+.Container-primary{
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.Container-Crud p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  align-items: left;
+}
+
+.Container-CrudFrom{
+  padding: 10px;
+  width: 45%;
+  height: 100%;
+  position: fixed; 
+}
+
+.name-container{
+  display: flex;
+
+}
+
+.input-box input{
+  width: 90%;
+  background-color: rgb(240, 240, 240);
+}
+
+.input-container input{
+  width: 85%;
+  background-color: rgb(240, 240, 240);
+}
+
+.input-box label i,
+.input-container label i {
+  margin-right: 5px;
+}
+
+
+.btn-add{
+  width: 94%;
+  height: 30px;
+  background-color: #555A88;
+  color: white;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.cancel-btn{
+  width: 94%;
+  height: 30px;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.button-container{
+  position: relative;
+  left: 83%;
+  width: fit-content;
+  top: 5%;
+}
+
+.btn-delete{
+  margin-right: 2px;
+  color: lightcoral;
+}
+
+.button-container button{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.crud-box{
+  border-bottom: 1px solid black;
+}
+
+.component-container{
+  position: absolute;
+  left: 0;
+  width: 28%;
+  padding: 1rem;
+}
+
+.Container-CrudFrom:hover{
+  box-shadow: 0 0 10px #555A88;
+}
+
+.Container-Crud:hover{
+  box-shadow: 0 0 10px #555A88;
+}
